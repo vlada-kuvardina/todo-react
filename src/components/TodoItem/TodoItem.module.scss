@@ -28,7 +28,7 @@
 
   &.isAppearing {
     animation: appear calc(var(--transition-duration) * 2);
-    pointer-events: none;
+    pointer-events: none; 
 
     @keyframes appear {
       from {

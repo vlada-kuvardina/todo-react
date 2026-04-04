@@ -33,7 +33,7 @@ const TodoItem = (props) => {
       <input
         className={styles.checkbox}
         id={id}
-        type="checkbox"
+        type="checkbox" 
         checked={isDone}
         onChange={({ target }) => {
           toggleTaskComplete(id, target.checked)
