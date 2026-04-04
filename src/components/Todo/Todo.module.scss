@@ -12,7 +12,7 @@
   box-shadow: 0 8px 20px rgba(236, 72, 153, 0.1);
 }
 
-.todo__title {
+.title {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
@@ -20,16 +20,16 @@
   color: var(--color-accent-dark);
 }
 
-.todo__form {
+.form {
   display: flex;
   column-gap: 16px;
 }
 
-.todo__field {
+.field {
   width: 100%;
 }
 
-.todo__info {
+.info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +38,7 @@
   color: var(--color-accent-dark);
 }
 
-.todo__delete-all-button {
+.deleteAllButton {
   padding: 0;
   background-color: transparent;
   border: none;
@@ -48,21 +48,21 @@
   }
 }
 
-.todo__list,
-.todo__empty-message {
+.list,
+.emptyMessage {
   &:empty {
     display: none;
   }
 }
 
-.todo__list {
+.list {
   --todoListRowGap: 8px;
 
   display: grid;
   row-gap: var(--todoListRowGap);
 }
 
-.todo__empty-message {
+.emptyMessage {
   text-align: center;
   color: var(--color-gray-4);
 }
