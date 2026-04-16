@@ -1,12 +1,109 @@
-# React + Vite
+># 📝 Todo App (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pet-проект, демонстрирующий разработку полноценного SPA-приложения на React с продуманной архитектурой, управлением состоянием и оптимизацией производительности.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Превью
 
-## Expanding the ESLint configuration
+<p align="center">
+  <img src="./preview.gif" width="50%"/>
+</p>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 О проекте
+
+Это не просто todo-лист, а приложение, в котором я последовательно отрабатывала ключевые навыки frontend-разработчика:
+
+* переход от простого состояния (`useState`) к более масштабируемому (`useReducer`)
+* организация архитектуры с использованием Feature-Sliced Design
+* работа с роутингом и навигацией в SPA
+* оптимизация производительности React-приложения
+
+---
+
+## ✨ Функциональность
+
+* ➕ Добавление и удаление задач
+* ✅ Отметка выполнения
+* 🔍 Поиск задач по названию
+* 📄 Просмотр детальной информации о задаче (отдельный роут)
+* ⏮️ Переход к первой невыполненной задаче
+* 💾 Сохранение данных (localStorage → JSON server)
+* 📱 Адаптивный интерфейс
+
+---
+
+## 🛠️ Технологический стек
+
+* React (JavaScript, JSX)
+* React Hooks: useState, useReducer, useEffect, useRef, useMemo, useCallback
+* React Router
+* Context API
+* Feature-Sliced Design (FSD)
+* JSON Server (эмуляция backend API)
+* GitHub Pages (деплой)
+
+---
+
+## 🧠 Ключевые решения
+
+### Архитектура
+
+Проект структурирован по методологии Feature-Sliced Design, что позволяет:
+
+* масштабировать приложение
+* изолировать бизнес-логику
+* переиспользовать компоненты
+
+### Управление состоянием
+
+* использован `useReducer` для более предсказуемой логики
+* Context API для избежания prop drilling
+* кастомные хуки для переиспользования логики
+
+### Оптимизация
+
+* React.memo, useMemo, useCallback
+* контроль ререндеров компонентов
+
+---
+
+## 🔄 Работа с данными
+
+* Изначально: `localStorage`
+* Затем: переход на JSON Server для имитации REST API
+  (работа с асинхронными запросами и побочными эффектами)
+
+---
+
+## 🔀 Навигация
+
+* реализован SPA с помощью React Router
+* у каждой задачи есть отдельная страница
+* переходы без перезагрузки
+
+---
+
+## 📦 Установка и запуск
+
+```bash
+git clone https://github.com/vlada-kuvardina/todo-react.git
+cd todo-react
+npm install
+npm start
+```
+
+### Запуск mock API
+
+```bash
+npx json-server --watch db.json --port 3001
+```
+
+---
+
+## 🚀 Деплой
+
+Проект доступен по ссылке:
+👉 https://vlada-kuvardina.github.io/todo-react/
